@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D1528FC221776474000D0256 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D1528FC121776474000D0256 /* tessdata */; };
+		D1307F8221778A6800A1FAEC /* SwiftyTesseract.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1307F8121778A6800A1FAEC /* SwiftyTesseract.framework */; };
+		D1307F8321778AF200A1FAEC /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D1307F7F21778A6700A1FAEC /* tessdata */; };
 		D1C278402177616D00776047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C2783F2177616D00776047 /* AppDelegate.swift */; };
 		D1C278422177616D00776047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C278412177616D00776047 /* ViewController.swift */; };
 		D1C278452177616D00776047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C278432177616D00776047 /* Main.storyboard */; };
@@ -20,7 +21,8 @@
 /* Begin PBXFileReference section */
 		14FFA615386B1A24E1BA1478 /* Pods-OCR-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR-Example/Pods-OCR-Example.release.xcconfig"; sourceTree = "<group>"; };
 		4DA26D6BDB2D4FDA44F5F341 /* Pods_OCR_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1528FC121776474000D0256 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		D1307F7F21778A6700A1FAEC /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		D1307F8121778A6800A1FAEC /* SwiftyTesseract.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyTesseract.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C2783C2177616C00776047 /* OCR-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C2783F2177616D00776047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1C278412177616D00776047 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1307F8221778A6800A1FAEC /* SwiftyTesseract.framework in Frameworks */,
 				DB6C15595812A16BC8D4561C /* Pods_OCR_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +50,7 @@
 		2485609706AB69D325983E84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1307F8121778A6800A1FAEC /* SwiftyTesseract.framework */,
 				4DA26D6BDB2D4FDA44F5F341 /* Pods_OCR_Example.framework */,
 			);
 			name = Frameworks;
@@ -64,7 +68,7 @@
 		D1528FC021776464000D0256 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D1528FC121776474000D0256 /* tessdata */,
+				D1307F7F21778A6700A1FAEC /* tessdata */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,8 +166,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1307F8321778AF200A1FAEC /* tessdata in Resources */,
 				D1C2784D2177616F00776047 /* LaunchScreen.storyboard in Resources */,
-				D1528FC221776474000D0256 /* tessdata in Resources */,
 				D1C2784A2177616F00776047 /* Assets.xcassets in Resources */,
 				D1C278452177616D00776047 /* Main.storyboard in Resources */,
 			);
