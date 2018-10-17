@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1528FC221776474000D0256 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D1528FC121776474000D0256 /* tessdata */; };
 		D1C278402177616D00776047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C2783F2177616D00776047 /* AppDelegate.swift */; };
 		D1C278422177616D00776047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C278412177616D00776047 /* ViewController.swift */; };
 		D1C278452177616D00776047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C278432177616D00776047 /* Main.storyboard */; };
 		D1C278482177616D00776047 /* OCR_Example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1C278462177616D00776047 /* OCR_Example.xcdatamodeld */; };
 		D1C2784A2177616F00776047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C278492177616F00776047 /* Assets.xcassets */; };
 		D1C2784D2177616F00776047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C2784B2177616F00776047 /* LaunchScreen.storyboard */; };
+		DB6C15595812A16BC8D4561C /* Pods_OCR_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA26D6BDB2D4FDA44F5F341 /* Pods_OCR_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14FFA615386B1A24E1BA1478 /* Pods-OCR-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR-Example/Pods-OCR-Example.release.xcconfig"; sourceTree = "<group>"; };
+		4DA26D6BDB2D4FDA44F5F341 /* Pods_OCR_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1528FC121776474000D0256 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		D1C2783C2177616C00776047 /* OCR-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C2783F2177616D00776047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1C278412177616D00776047 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D1C278492177616F00776047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1C2784C2177616F00776047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1C2784E2177616F00776047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E37EC289E27291150EF140 /* Pods-OCR-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCR-Example/Pods-OCR-Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6C15595812A16BC8D4561C /* Pods_OCR_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2485609706AB69D325983E84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DA26D6BDB2D4FDA44F5F341 /* Pods_OCR_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		491FC3BAFC82DA648F9BD8CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0E37EC289E27291150EF140 /* Pods-OCR-Example.debug.xcconfig */,
+				14FFA615386B1A24E1BA1478 /* Pods-OCR-Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1528FC021776464000D0256 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1528FC121776474000D0256 /* tessdata */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D1C278332177616C00776047 = {
 			isa = PBXGroup;
 			children = (
 				D1C2783E2177616C00776047 /* OCR-Example */,
 				D1C2783D2177616C00776047 /* Products */,
+				491FC3BAFC82DA648F9BD8CB /* Pods */,
+				2485609706AB69D325983E84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +90,7 @@
 		D1C2783E2177616C00776047 /* OCR-Example */ = {
 			isa = PBXGroup;
 			children = (
+				D1528FC021776464000D0256 /* Supporting Files */,
 				D1C2783F2177616D00776047 /* AppDelegate.swift */,
 				D1C278412177616D00776047 /* ViewController.swift */,
 				D1C278432177616D00776047 /* Main.storyboard */,
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1C278512177616F00776047 /* Build configuration list for PBXNativeTarget "OCR-Example" */;
 			buildPhases = (
+				834BD1C7AFA0EA7C373AA78E /* [CP] Check Pods Manifest.lock */,
 				D1C278382177616C00776047 /* Sources */,
 				D1C278392177616C00776047 /* Frameworks */,
 				D1C2783A2177616C00776047 /* Resources */,
+				774BB90BEFDF745DCB5A3842 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +163,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1C2784D2177616F00776047 /* LaunchScreen.storyboard in Resources */,
+				D1528FC221776474000D0256 /* tessdata in Resources */,
 				D1C2784A2177616F00776047 /* Assets.xcassets in Resources */,
 				D1C278452177616D00776047 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		774BB90BEFDF745DCB5A3842 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OCR-Example/Pods-OCR-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTesseract/SwiftyTesseract.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTesseract.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCR-Example/Pods-OCR-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		834BD1C7AFA0EA7C373AA78E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCR-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1C278382177616C00776047 /* Sources */ = {
@@ -284,6 +369,7 @@
 		};
 		D1C278522177616F00776047 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E37EC289E27291150EF140 /* Pods-OCR-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +388,7 @@
 		};
 		D1C278532177616F00776047 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14FFA615386B1A24E1BA1478 /* Pods-OCR-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
