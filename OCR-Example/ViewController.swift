@@ -25,15 +25,17 @@ class ViewController: UIViewController {
     
     func performImageRecognition(_ image: UIImage) {
         print("performImageRecognition() called, setting language...")
-        let swiftyTesseract = SwiftyTesseract(languages: [.english])
+        let swiftyTesseract = SwiftyTesseract(languages: [.english, .german])
         print("performOCR()...")
         
         swiftyTesseract.performOCR(on: image) { (recognizedString) in
             print("performOCR done...")
             guard let recognizedString = recognizedString else { return }
             print(recognizedString)
+            self.textField.text = recognizedString
         }
         print("recognition done")
+        
     }
 
 
@@ -82,7 +84,9 @@ extension ViewController: UIImagePickerControllerDelegate {
         // 2
         if let selectedPhoto = info[UIImagePickerController.InfoKey.originalImage] as? UIImage,
             let scaledImage = selectedPhoto.scaleImage(640) {
-            self.performImageRecognition(scaledImage)
+            dismiss(animated: true, completion: {
+                self.performImageRecognition(scaledImage)
+            })
         }
     }
 }
